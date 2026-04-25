@@ -10,7 +10,7 @@ public class CocheCombustion extends Vehiculo {
         super(color, numeroPuertas, numeroRuedas, modelo, matricula);
         this.litrosCombustible = litrosCombustible;
         this.motorEncendido = false;
-        // DUDA PARA CORRECCIÓN:
+        // DUDA PARA CUANDO ESTES CORRIGIENDO ESTO:
         // En estos casos seria mejor la opción falsa ya que el coche
         // deberia estar apagado de primeras no?
     }
@@ -48,8 +48,8 @@ public class CocheCombustion extends Vehiculo {
 
     @Override
     public void mover() {
-        if (motorEncendido = false) {
-            System.out.println("No queda combustible mi niño");
+        if (!motorEncendido) {
+            System.out.println("Enciende el coche totufo");
             return;
         }
 
@@ -60,7 +60,7 @@ public class CocheCombustion extends Vehiculo {
         }
 
         litrosCombustible--; 
-        System.out.println("La palo... digo el coche funcha. Combustible restante: " + litrosCombustible);
+        System.out.println("La paloma... digo el coche funcha. Combustible restante: " + litrosCombustible);
     }
     
 
